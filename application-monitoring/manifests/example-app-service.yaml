@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata: 
+  name: example-app
+  labels:
+    tier: frontend
+spec: 
+  selector: 
+    app: example-app 
+  ports:
+  - name: web
+    protocol: TCP
+    port: 8080
+    targetPort: web
