@@ -7,6 +7,11 @@ Feel free to open an issue if you are facing any kinds of trouble with the
 prerequisite steps.
 
 
+## Slides
+
+To follow along you can find the slides [here](https://docs.google.com/presentation/d/1MendWFkXDLrqOnsWq2Suk-9VnLyJDAcuAopoOnOuZuo).
+
+
 ## Prerequisites
 
 Please make sure to have the following things prepared **before** the workshop:
