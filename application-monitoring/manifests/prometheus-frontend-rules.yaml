@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: prometheus-frontend-rules
+  labels:
+    role: prometheus-rulefiles
+    prometheus: frontend
+data:
+  prometheus.rules: |+
+    ALERT ExampleAppDown
+      IF sum(up{service="example-app"}) == 0
+      FOR 30s
+      LABELS {
+        severity = "danger"
+      }
+      ANNOTATIONS {
+        summary = "No replicas of service 'example-app' up",
+        description = "There are no pods to serve the example-app service workload."
+      }

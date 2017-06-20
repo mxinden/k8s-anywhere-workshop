@@ -20,6 +20,10 @@ spec:
       memory: 400Mi
   alerting:
     alertmanagers:
-    - namespace: monitoring
+    - namespace: default
       name: alertmanager-main
       port: web
+  ruleSelector:
+    matchLabels:
+      role: prometheus-rulefiles
+      prometheus: frontend
